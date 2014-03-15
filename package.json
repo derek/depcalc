@@ -1,0 +1,29 @@
+{
+    "name": "depcalc",
+    "version": "0.0.1-pre",
+    "engines": { "node": ">=0.8.0" },
+    "bin": {
+        "ydc": "./bin/cli.js",
+        "yogi-deptree": "./bin/cli.js"
+    },
+    "scripts": {
+        "pretest": "./scripts/npm/pretest.sh",
+        "test": "./scripts/npm/test.sh",
+        "docs": "./node_modules/.bin/yuidoc . -o docs",
+        "clean": "npm prune; rm -rf docs coverage;"
+    },
+    "dependencies": {
+        "glob": "~3.2.6",
+        "nopt": "~2.1.2"
+    },
+    "devDependencies": {
+        "istanbul" : "~0.1.44",
+        "jshint": "~2.1.11",
+        "vows" : "~0.7.0",
+        "yui-lint": "~0.1.3",
+        "yuidocjs" : "~0.3.46"
+    },
+    "main": "./lib/index.js",
+    "preferGlobal": "true"
+}
+
